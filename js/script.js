@@ -17,7 +17,6 @@ function drawRegionsMap() {
     legend: 'none',
     datalessRegionColor : "#878585",
     colorAxis: {minValue: 0,  colors: ['#FFFFFF', '#FFA500']}
-    
    
   };
 
@@ -49,20 +48,11 @@ google.charts.load("current", {packages:["corechart"]});
           },
           legend : "none", 
           height: 300,
-
-          // width: 400
-          
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('active-medias-content'));
         chart.draw(data, options);
       }
-
-
-
-
-
-
 
 var xValues = [100,200,300,400,500,600,700,800,900,1000];
 
@@ -72,15 +62,15 @@ new Chart("myChart", {
     labels: xValues,
     datasets: [{ 
       data: [4000,5000,4000,1500,750,300,1500,2000,4000,5000],
-      borderColor: "#1f7bb6",  // kaput 
+      borderColor: "#1f7bb6",
       fill: true
     }, { 
       data: [6000,7000,6000,3000,2000,600,2000,4000,6000,7000],
-      borderColor: "#00abab", // kanach
+      borderColor: "#00abab",
       fill: true
     }, { 
       data: [5000,6000,5000,2000,1000,500,1000,3000,5000,6000],
-      borderColor: "#f7cc70", //gazar
+      borderColor: "#f7cc70",
       fill: true
     }]
   },
@@ -88,4 +78,3 @@ new Chart("myChart", {
     legend: {display: false}
   }
 });
-//"#1f7bb6"
